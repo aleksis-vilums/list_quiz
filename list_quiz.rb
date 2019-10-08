@@ -35,3 +35,28 @@ end
 
 # puts bigger_two([1, 2], [3, 4])
 # puts bigger_two([1, 7], [4, 4])
+
+def series_up(n)
+    new_list = []
+    size = (n * (n + 1)) / 2
+
+    if n == 1
+        new_list[size] = size
+    end
+
+    if n > 1
+        nums = size - 1
+        new_list[size] = nums
+    end
+
+    size.times do |i|
+        new_list[0] = 1
+    end
+
+    return new_list
+end
+
+puts series_up(1)
+puts series_up(2)
+puts series_up(3)
+puts series_up(4)
