@@ -50,7 +50,8 @@ def series_up(n)
     end
 
     size.times do |i|
-        new_list[0] = 1
+        new_list[i] = i + 1
+        new_list[i + 1] = 
     end
 
     return new_list
