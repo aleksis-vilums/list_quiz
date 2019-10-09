@@ -37,27 +37,22 @@ end
 # puts bigger_two([1, 7], [4, 4])
 
 def series_up(n)
-    new_list = []
-    size = (n * (n + 1)) / 2
+    # deleted everything because it wasn't working for me
+    adding = 1
 
-    if n == 1
-        new_list[size] = size
+    n.times do |i|
+        print 1 # always known
+        i.times do #i tells how many times to do for example the first time it doesn't do anything.
+            print adding + 1 # prints the numbers after the 1 like 2, 3, 4, 5, and more.
+            adding = adding + 1 # when doing the loop multiple times it adds
+        end
+
+        adding = 1 # resets to the beginning 1
     end
 
-    if n > 1
-        nums = size - 1
-        new_list[size] = nums
-    end
-
-    size.times do |i|
-        new_list[i] = i + 1
-        new_list[i + 1] = 
-    end
-
-    return new_list
 end
 
-puts series_up(1)
-puts series_up(2)
-puts series_up(3)
-puts series_up(4)
+series_up(1)
+series_up(2)
+series_up(3)
+series_up(4)
